@@ -9,13 +9,12 @@ function App() {
   const [m, setM] = useState(false);
   return (
     <>
-      <h1>Hello AR</h1>
       <button
         onClick={() => {
           setM(!m);
         }}
       >
-        Hello World
+        Activar Camara
       </button>
       {m && (
         <>

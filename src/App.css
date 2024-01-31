@@ -6,13 +6,30 @@ video {
 button {
     cursor: pointer;
     z-index: 1000;
+    margin: 10%;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #131313;
+    transition: all .2s ease;
+    &:hover {
+        box-shadow: 0 5px 15px #131313;
+        transition: all .2s ease;
+        transform: scale(.95);
+    }
 }
 body {
     .mindar-ui-scanning {
         width: 700px !important;
         height: 525px !important;
         position: absolute;
-        top: 12%;
+        top: 26%;
+    }
+    .a-enter-vr-button {
+        display: none;
     }
     #card {
         position: relative !important;
