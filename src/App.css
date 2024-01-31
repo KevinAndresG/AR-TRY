@@ -1,0 +1,21 @@
+video {
+    position:  static !important;
+    width: 700px !important;
+    height: 525px !important;
+}
+button {
+    cursor: pointer;
+    z-index: 1000;
+}
+body {
+    .mindar-ui-scanning {
+        width: 700px !important;
+        height: 525px !important;
+        position: absolute;
+        top: 12%;
+    }
+    #card {
+        position: relative !important;
+        z-index: 1000;
+    }
+}
