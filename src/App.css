@@ -1,13 +1,15 @@
 video {
-    position:  static !important;
-    width: 700px !important;
-    height: 525px !important;
+    position: static !important;
+    width: 500px !important;
+    height: auto !important;
 }
+
 button {
     cursor: pointer;
     z-index: 1000;
-    margin: 10%;
-    margin-bottom: 5px;
+    margin-left: 50%;
+    margin-top: 5%;
+    transform: translateX(-50%);
     width: 150px;
     height: 50px;
     font-size: 18px;
@@ -15,24 +17,31 @@ button {
     border-radius: 10px;
     box-shadow: 0 10px 20px #131313;
     transition: all .2s ease;
+
     &:hover {
         box-shadow: 0 5px 15px #131313;
         transition: all .2s ease;
-        transform: scale(.95);
     }
 }
+
 body {
     .mindar-ui-scanning {
-        width: 700px !important;
-        height: 525px !important;
-        position: absolute;
-        top: 26%;
+        width: 500px !important;
+        height: 380px !important;
     }
+
     .a-enter-vr-button {
         display: none;
     }
+
+    .a-canvas {
+        position: relative !important;
+        z-index: 10 !important;
+    }
+
     #card {
         position: relative !important;
         z-index: 1000;
     }
+
 }
