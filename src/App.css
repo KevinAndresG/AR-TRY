@@ -1,7 +1,7 @@
 video {
     position: static !important;
-    width: 500px !important;
-    height: auto !important;
+    width: 50% !important;
+    height: 50% !important;
 }
 
 button {
@@ -26,8 +26,17 @@ button {
 
 body {
     .mindar-ui-scanning {
-        width: 500px !important;
-        height: 380px !important;
+        width: 90% !important;
+        height: 30% !important;
+
+        .scanning {
+            width: 30%;
+            height: 100%;
+            position: absolute;
+            top: 100%;
+            left: 10%;
+            /* transform: translate(-50%); */
+        }
     }
 
     .a-enter-vr-button {
@@ -44,4 +53,29 @@ body {
         z-index: 1000;
     }
 
+}
+
+@media screen and (max-width: 608px) {
+    video {
+        position: static !important;
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    body {
+        .mindar-ui-scanning {
+            width: 50% !important;
+            height: 10% !important;
+
+            .scanning {
+                display: none;
+                width: 50%;
+                height: 60%;
+                position: absolute;
+                /* top: 50%;
+                left: 50%; */
+                /* transform: translate(-50%); */
+            }
+        }
+    }
 }
