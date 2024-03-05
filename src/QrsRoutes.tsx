@@ -4,6 +4,7 @@ import logo2 from "./assets/logo_si2.jpg";
 import sinapsis from "./assets/sinapsis.svg";
 import instagram from "./assets/instagram.svg";
 import newTargets from "./assets/newTargets.mind";
+import target from "./assets/targets.mind";
 import uno from "./assets/1.jpg";
 import dos from "./assets/2.png";
 import tres from "./assets/3.jpg";
@@ -41,9 +42,9 @@ const QrsRoutes = () => {
     <div>
       <div id="example-scanning-overlay" className="hidden">
         {switchLogo === 0 ? (
-          <img src={logo} alt="" />
+          <img width={200} src={logo} alt="" />
         ) : (
-          <img src={logo2} alt="" />
+          <img width={200} src={logo2} alt="" />
         )}
         <p>Scanning...</p>
       </div>
@@ -72,7 +73,7 @@ const QrsRoutes = () => {
           cursor="fuse: false; rayOrigin: mouse;"
           raycaster="far: 10000; objects: .clickable"
         ></a-camera>
-        <a-entity mindar-image-target="targetIndex: 0">
+        <a-entity mindar-image-target="targetIndex: 1">
           <a-image
             src="#card"
             position="-1 0.5 0"
@@ -105,7 +106,7 @@ const QrsRoutes = () => {
             onClick={goToInsta}
           ></a-image>
         </a-entity>
-        <a-entity mindar-image-target="targetIndex: 1">
+        <a-entity mindar-image-target="targetIndex: 0">
           <a-gltf-model
             rotation="90 0 0 "
             position="-1 0 0"
